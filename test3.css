@@ -1,0 +1,509 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/*stylecss*/
+/*ヘッダー*/
+/*ヘッダーロゴ*/
+.site-header {
+    width: 100%;
+    position: absolute;
+}
+
+.site-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-width {
+    max-width: 100%;
+    margin: 0 36px 0 36px;
+    position: relative;
+}
+
+@media screen and (min-width: 768px){
+.hover-opacity {
+    transition: opacity 0.2;
+}
+}
+
+.header-logo > .header-logo-pc {
+    width: auto;
+    height:25px;
+}
+
+.header-logo>.header-logo-sp {
+    display:none;
+}
+
+
+.img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.contents-tidy {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*ヘッダーメニュー*/
+
+.site-header>.site-header-inner >＊:last-child {
+    display: inline-flex;
+}
+
+
+.header-nav-hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 1080px){
+    .header-nav-hamburger {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 21px;
+        z-index : 100;
+}
+}
+
+@media screen and (max-width: 1080px) {
+    .header-nav-hamburger-line:first-child {
+        top: 0;
+}
+}
+
+@media screen and (max-width: 1080px) {
+    .header-nav-hamburger-line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #222;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+    transition: top 0.2s, transform 0.2s, opacity 0.3s;
+}
+} 
+
+@media screen and (max-width: 1080px) {
+    .header-nav-hamburger-line:last-child {
+        top: 100%;
+}
+}
+
+.header-nav.header-nav-list.contents-tidy {
+    align-items: center;
+}
+
+.header-nav .header-nav-item-outline {
+    margin-right : 45px;
+}
+
+.header-nav .header-nav-item {
+    display: block;
+}
+
+@media screen and (max-width: 1080px) {
+    .header-nav .header-nav-list.is-scroll {
+        top: 60%;
+        bottom: 0%
+}
+}
+
+@media screen and (max-width: 1080px) {
+    .header-nav .header-nav-list {
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    transition: transform 0.5s;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+}
+
+
+.header-nav-item-outline a {
+    color: #222;
+    text-decoration: none;
+}
+
+.header-nav .header-nav-item > span:first-child {
+    font-family: 'Lato', sans-serif;
+}
+
+.header-nav .header-nav-item > span {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header-nav .header-nav-item-outline span {
+    font-size: 14px;
+    display: block;
+}
+
+.header-nav .header-nav-item > span:last-child {
+    font-size: 10px;
+}
+
+.header-button {
+    width: fit-content;
+}
+
+.link-button.menu {
+    font-size: 12px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.link-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    background-color: #f79314;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+}
+
+/*FirstView*/
+
+.FirstView {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
+
+.FirstView_main-image--sp {
+    display: none;
+}
+
+.FirstView_main-image {
+    width: 100%;
+}
+
+.FirstView__container{
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.FirstViewContent {
+    margin-bottom: 70px;
+    width: fit-content;
+}
+
+.FirstViewContent__title {
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.FirstViewContent__images {
+    margin-bottom: 25px;
+}
+
+.FirstViewContent__images img {
+    margin-right: 8px;
+}
+
+.img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.FirstViewContent__images img:nth-of-type(2) {
+    width: 40%;
+}
+
+.FirstViewContent__buttons {
+    display: flex;
+}
+
+.FirstViewContent__buttons a {
+    align-items: center;
+    background-color: #F79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 64px;
+}
+
+.FirstViewContent__buttons a:first-of-type {
+    margin-right: 15px;
+    width: 306px;
+}
+
+@media screen and (min-width: 768px) {
+.FirstViewContent__buttons a {
+    transition: opacity 0.2s;
+}
+}
+
+.FirstViewContent__buttons a:last-of-type {
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    color: #333333;
+    width: 176px;
+}
+
+
+.FirstViewCaption {
+    color: #A2A2A4;
+    font-size: 12px;
+}
+
+.FirstViewCaption a {
+    color: #A2A2A4;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/*ポテパンキャンプとは*/
+.main-section.top-about {
+    background-color: #f79314;
+    padding: 45px 0;
+}
+
+.top-about .contents-tidy {
+    align-items: center;
+}
+
+.content-width {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+.about-text {
+    color: #fff;
+    width: 53%;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.aboutu-text h2>span {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.about-text p {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 15px;
+    line-height: 26px;
+}
+
+.top-about-button {
+    width: 320px;
+}
+
+
+.about-text+.top-about-button {
+    width: 250px;
+ }
+
+
+.link-button.inversion {
+    color: #f79314;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.link-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+}
+
+.link-button span:last-child {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+.main-section.top-about {
+        padding: 30px 0;
+}
+
+.content-width {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.top-about-content {
+    width: 100%;
+    flex-direction: column;
+}
+
+.about-text {
+    width: 100%;
+}
+
+.about-text h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+.about-text h2>span {
+    font-size: 30px 
+}
+
+.about-text+.top-about-button {
+    margin-top: 40px;
+}
+}
