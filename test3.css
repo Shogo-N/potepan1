@@ -122,7 +122,11 @@ input, select {
     position: relative;
 }
 
-@media screen and (min-width: 768px){
+.hover-opacity:hover {
+    opacity: 0.2;
+}
+
+@media screen and (max-width: 768px){
 .hover-opacity {
     transition: opacity 0.2;
 }
@@ -136,6 +140,7 @@ input, select {
 }
 }
 
+
 .header-logo > .header-logo-pc {
     width: auto;
     height:25px;
@@ -145,6 +150,7 @@ input, select {
     display:none;
 }
 
+.header-logo
 
 .img {
     border: 0;
